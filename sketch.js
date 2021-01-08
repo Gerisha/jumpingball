@@ -47,6 +47,7 @@ function draw() {
     //add condition to check if box touching surface and make it box
     if (box1.isTouching(ball) && ball.bounceOff(box1)) {
         ball.shapeColor = "red";
+        music.play();
     }
     if (ball.isTouching(box2)) {
         ball.shapeColor ="purple";
@@ -57,9 +58,11 @@ function draw() {
     
     if (box3.isTouching(ball) && ball.bounceOff(box3)) {
         ball.shapeColor = "yellow";
+        music.play();
     }
     if (box4.isTouching(ball) && ball.bounceOff(box4)) {
         ball.shapeColor = "blue";
+        music.play();
     }
 
     
